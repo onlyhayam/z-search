@@ -1,2 +1,2 @@
 # Z-search
-A search engine that gives choices.
+A search engine that actually gives choices.
