@@ -13,6 +13,9 @@
    id="svg6"
    sodipodi:docname="aperture.svg"
    xml:space="preserve"
+   inkscape:export-filename="zs.svg"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +35,13 @@
        height="20.750002"
        id="page2"
        margin="0"
-       bleed="0" /></sodipodi:namedview><circle
+       bleed="0" /></sodipodi:namedview><rect
+     style="fill:#808080;fill-opacity:1;stroke-width:907.087;stroke-linecap:square;stroke-miterlimit:5.7;stroke-opacity:0.99;paint-order:stroke fill markers"
+     id="rect6"
+     width="22.095335"
+     height="22.30024"
+     x="-0.64885837"
+     y="-0.51225662" /><circle
      cx="10.375"
      cy="-10.375"
      r="10"
