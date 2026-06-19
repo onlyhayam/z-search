@@ -4,4 +4,4 @@
 
 # Z-search 
 
-_A search engine that actually gives choices._
+_Feel no more owned by a single search engine !_
