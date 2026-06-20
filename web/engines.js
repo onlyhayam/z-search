@@ -57,6 +57,12 @@ const ENGINES = [
     name: "Qwant",
     url: "https://www.qwant.com/?q=%s",
     icon: "https://www.google.com/s2/favicons?sz=64&domain=qwant.com"
+    },
+    {
+    id: "wikipedia",
+    name: "Wikipedia",
+    url: "https://www.wikipedia.org/",
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=wikipedia.org" 
   }
 ];
 
