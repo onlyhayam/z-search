@@ -339,3 +339,14 @@ body {
 [hidden] {
   display: none !important;
 }
+
+a {
+  color: var(--color-text);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  color: var(--color-text);
+}
