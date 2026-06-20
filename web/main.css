@@ -22,8 +22,13 @@
 }
 
 body {
+  position: relative;
   margin: 0;
   background: var(--color-bg);
+  background-image: url(z.svg);
+  background-size: 400px ;
+  background-position: center;
+  background-repeat: no-repeat;
   color: var(--color-text);
   font-family: var(--font);
   min-height: 100vh;
@@ -253,8 +258,9 @@ body {
 
 /* ---------------- Engine quick-launch list ---------------- */
 .engine-list {
+  align-self: self-start;
   width: 100%;
-  max-width: 320px;
+  max-width: 250px;
   display: flex;
   flex-direction: column;
   gap: 10px;
@@ -273,7 +279,7 @@ body {
   box-sizing: border-box;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   gap: 6px;
   background: var(--color-bg-secondary);
   border: 1px solid var(--color-border);
