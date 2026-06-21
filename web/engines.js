@@ -18,52 +18,59 @@
 
 const ENGINES = [
   {
-    id: "duckduckgo",
-    name: "DuckDuckGo",
-    url: "https://duckduckgo.com/?q=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=duck.com"
-  },
-  {
-    id: "startpage",
-    name: "Startpage",
-    url: "https://www.startpage.com/sp/search?query=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=startpage.com"
-  },
-  {
-    id: "google",
-    name: "Google",
-    url: "https://www.google.com/search?q=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=google.com"  },
-  {
     id: "bing",
     name: "Bing",
     url: "https://www.bing.com/search?q=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=bing.com"
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=bing.com",
   },
   {
     id: "brave",
     name: "Brave Search",
     url: "https://search.brave.com/search?q=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=brave.com"
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=brave.com",
+  },
+  {
+    id: "duckduckgo",
+    name: "DuckDuckGo",
+    url: "https://duckduckgo.com/?q=%s",
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=duck.com",
   },
   {
     id: "ecosia",
     name: "Ecosia",
     url: "https://www.ecosia.org/search?q=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=ecosia.org"
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=ecosia.org",
+  },
+  {
+    id: "google",
+    name: "Google",
+    url: "https://www.google.com/search?q=%s",
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=google.com",
   },
   {
     id: "qwant",
     name: "Qwant",
     url: "https://www.qwant.com/?q=%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=qwant.com"
-    },
-    {
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=qwant.com",
+  },
+  {
+    id: "privau",
+    name: "PrivAu",
+    url: "https://www.priv.au/%s",
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=priv.au",
+  },
+  {
+    id: "startpage",
+    name: "Startpage",
+    url: "https://www.startpage.com/sp/search?query=%s",
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=startpage.com",
+  },
+  {
     id: "wikipedia",
     name: "Wikipedia",
     url: "https://www.wikipedia.org/%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=wikipedia.org" 
-  }
+    icon: "https://www.google.com/s2/favicons?sz=64&domain=wikipedia.org",
+  },
 ];
 
 const DEFAULT_ENGINE_ID = "duckduckgo";
@@ -81,5 +88,8 @@ function buildSearchUrl(engineId, query) {
  * Returns the engine object for a given id, falling back to the default.
  */
 function getEngine(engineId) {
-  return ENGINES.find((e) => e.id === engineId) || ENGINES.find((e) => e.id === DEFAULT_ENGINE_ID);
+  return (
+    ENGINES.find((e) => e.id === engineId) ||
+    ENGINES.find((e) => e.id === DEFAULT_ENGINE_ID)
+  );
 }
