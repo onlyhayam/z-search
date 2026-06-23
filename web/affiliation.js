@@ -130,7 +130,7 @@ let autoTimer = null;
 
 function renderSlides() {
   document.getElementById("slides").innerHTML = slides
-    .map((s) => `<div class="slide"><img src="${s.image}" alt="ad"></div>`)
+    .map((s) => `<div class="slide"><img src="${s.image}" alt="Hi"></div>`)
     .join("");
   document.getElementById("dots").innerHTML = slides
     .map(
