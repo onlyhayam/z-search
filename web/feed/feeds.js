@@ -10,7 +10,6 @@ const PRESET_FEEDS = {
     { name: "The Verge", url: "https://www.theverge.com/rss/index.xml" },
     { name: "Wired", url: "https://www.wired.com/feed/rss" },
     { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
-    { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
     { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
 
     {

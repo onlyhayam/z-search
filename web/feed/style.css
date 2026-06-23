@@ -89,7 +89,6 @@ header.topbar h1::before {
 }
 .tab:hover {
   color: var(--text);
-  border-color: var(--accent);
 }
 .tab.active {
   background: var(--accent-dim);
