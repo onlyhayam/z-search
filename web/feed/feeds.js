@@ -9,11 +9,124 @@ const PRESET_FEEDS = {
     },
     { name: "The Verge", url: "https://www.theverge.com/rss/index.xml" },
     { name: "Wired", url: "https://www.wired.com/feed/rss" },
+    { name: "TechCrunch", url: "https://techcrunch.com/feed/" },
+    {
+      name: "MIT Technology Review",
+      url: "https://www.technologyreview.com/feed/",
+    },
+    { name: "VentureBeat", url: "https://venturebeat.com/feed/" },
+    { name: "Hacker News", url: "https://hnrss.org/frontpage" },
+    { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
+    { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
+    { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
+    { name: "Hugging Face", url: "https://huggingface.co/blog/feed.xml" },
+    { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
+    {
+      name: "Towards Data Science",
+      url: "https://towardsdatascience.com/feed",
+    },
+    {
+      name: "Machine Learning Mastery",
+      url: "https://machinelearningmastery.com/feed/",
+    },
+    { name: "Krebs on Security", url: "https://krebsonsecurity.com/feed/" },
+    { name: "Schneier on Security", url: "https://www.schneier.com/feed/" },
+    {
+      name: "The Hacker News",
+      url: "https://feeds.feedburner.com/TheHackersNews",
+    },
+    { name: "BleepingComputer", url: "https://www.bleepingcomputer.com/feed/" },
+    { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
+    {
+      name: "SANS Internet Storm Center",
+      url: "https://isc.sans.edu/rssfeed.xml",
+    },
+    {
+      name: "CISA Alerts",
+      url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    },
   ],
-  Other: [
+
+  Cybersecurity: [
+    { name: "Krebs on Security", url: "https://krebsonsecurity.com/feed/" },
+    { name: "Schneier on Security", url: "https://www.schneier.com/feed/" },
+    {
+      name: "The Hacker News",
+      url: "https://feeds.feedburner.com/TheHackersNews",
+    },
+    { name: "BleepingComputer", url: "https://www.bleepingcomputer.com/feed/" },
+    { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
+    {
+      name: "SANS Internet Storm Center",
+      url: "https://isc.sans.edu/rssfeed.xml",
+    },
+    {
+      name: "CISA Alerts",
+      url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+    },
+  ],
+
+  AI: [
+    { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
+    { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
+    { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
+    { name: "Hugging Face", url: "https://huggingface.co/blog/feed.xml" },
+    { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
+    {
+      name: "Towards Data Science",
+      url: "https://towardsdatascience.com/feed",
+    },
+    {
+      name: "Machine Learning Mastery",
+      url: "https://machinelearningmastery.com/feed/",
+    },
+  ],
+
+  Literature: [
+    { name: "Literary Hub", url: "https://lithub.com/feed/" },
+    {
+      name: "The Paris Review",
+      url: "https://www.theparisreview.org/blog/feed/",
+    },
+    { name: "London Review of Books", url: "https://www.lrb.co.uk/blog/rss" },
+    { name: "Poetry Foundation", url: "https://www.poetryfoundation.org/rss" },
+    {
+      name: "The New Yorker Books",
+      url: "https://www.newyorker.com/feed/books",
+    },
+    { name: "Book Riot", url: "https://bookriot.com/feed/" },
+  ],
+
+  Cooking: [
+    { name: "Serious Eats", url: "https://www.seriouseats.com/rss" },
+    { name: "Food52", url: "https://food52.com/blog/feed" },
+    { name: "Smitten Kitchen", url: "https://smittenkitchen.com/feed/" },
+    { name: "Simply Recipes", url: "https://www.simplyrecipes.com/feed" },
+    {
+      name: "King Arthur Baking",
+      url: "https://www.kingarthurbaking.com/blog/feed",
+    },
+    { name: "The Kitchn", url: "https://www.thekitchn.com/rss" },
+  ],
+
+  General: [
     {
       name: "Reuters World",
       url: "https://www.reutersagency.com/feed/?best-topics=world&post_type=best",
+    },
+    {
+      name: "Reuters Business",
+      url: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+    },
+    {
+      name: "Associated Press",
+      url: "https://feeds.apnews.com/rss/apf-topnews",
+    },
+    { name: "BBC World", url: "http://feeds.bbci.co.uk/news/world/rss.xml" },
+    { name: "NPR News", url: "https://feeds.npr.org/1001/rss.xml" },
+    {
+      name: "The Economist",
+      url: "https://www.economist.com/the-world-this-week/rss.xml",
     },
   ],
 };
