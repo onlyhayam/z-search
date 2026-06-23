@@ -486,6 +486,7 @@ iframe {
 }
 
 .bg {
+  z-index: -10;
   position: absolute;
   top: 200px;
   left: calc(50% - 200px);
