@@ -9,76 +9,86 @@ const PRESET_FEEDS = {
     },
     { name: "The Verge", url: "https://www.theverge.com/rss/index.xml" },
     { name: "Wired", url: "https://www.wired.com/feed/rss" },
-    { name: "TechCrunch", url: "https://techcrunch.com/feed/" },
-    {
-      name: "MIT Technology Review",
-      url: "https://www.technologyreview.com/feed/",
-    },
-    { name: "VentureBeat", url: "https://venturebeat.com/feed/" },
-    { name: "Hacker News", url: "https://hnrss.org/frontpage" },
-    { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
     { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
     { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
-    { name: "Hugging Face", url: "https://huggingface.co/blog/feed.xml" },
     { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
-    {
-      name: "Towards Data Science",
-      url: "https://towardsdatascience.com/feed",
-    },
+
     {
       name: "Machine Learning Mastery",
       url: "https://machinelearningmastery.com/feed/",
     },
-    { name: "Krebs on Security", url: "https://krebsonsecurity.com/feed/" },
-    { name: "Schneier on Security", url: "https://www.schneier.com/feed/" },
-    {
-      name: "The Hacker News",
-      url: "https://feeds.feedburner.com/TheHackersNews",
-    },
-    { name: "BleepingComputer", url: "https://www.bleepingcomputer.com/feed/" },
     { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
-    {
-      name: "SANS Internet Storm Center",
-      url: "https://isc.sans.edu/rssfeed.xml",
-    },
-    {
-      name: "CISA Alerts",
-      url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-    },
   ],
 
   Cybersecurity: [
-    { name: "Krebs on Security", url: "https://krebsonsecurity.com/feed/" },
-    { name: "Schneier on Security", url: "https://www.schneier.com/feed/" },
-    {
-      name: "The Hacker News",
-      url: "https://feeds.feedburner.com/TheHackersNews",
-    },
-    { name: "BleepingComputer", url: "https://www.bleepingcomputer.com/feed/" },
     { name: "Dark Reading", url: "https://www.darkreading.com/rss.xml" },
-    {
-      name: "SANS Internet Storm Center",
-      url: "https://isc.sans.edu/rssfeed.xml",
-    },
-    {
-      name: "CISA Alerts",
-      url: "https://www.cisa.gov/cybersecurity-advisories/all.xml",
-    },
   ],
 
   AI: [
-    { name: "OpenAI", url: "https://openai.com/news/rss.xml" },
     { name: "Anthropic", url: "https://www.anthropic.com/news/rss.xml" },
-    { name: "Google DeepMind", url: "https://deepmind.google/blog/rss.xml" },
-    { name: "Hugging Face", url: "https://huggingface.co/blog/feed.xml" },
     { name: "BAIR Blog", url: "https://bair.berkeley.edu/blog/feed.xml" },
-    {
-      name: "Towards Data Science",
-      url: "https://towardsdatascience.com/feed",
-    },
+
     {
       name: "Machine Learning Mastery",
       url: "https://machinelearningmastery.com/feed/",
+    },
+  ],
+  Finance: [
+    // Global finance & markets
+    {
+      name: "Reuters Markets",
+      url: "https://www.reutersagency.com/feed/?best-topics=business-finance&post_type=best",
+    },
+    {
+      name: "Bloomberg Markets",
+      url: "https://feeds.bloomberg.com/markets/news.rss",
+    },
+
+    { name: "Morningstar", url: "https://www.morningstar.com/rss/news.xml" },
+
+    // CFO / Executive finance
+    { name: "CFO Dive", url: "https://www.cfodive.com/feeds/news/" },
+    { name: "CFO.com", url: "https://www.cfo.com/feed/" },
+    { name: "Treasury & Risk", url: "https://www.treasuryandrisk.com/feed/" },
+    {
+      name: "Harvard Business Review Finance",
+      url: "https://hbr.org/topic/finance/rss",
+    },
+
+    // Accounting & ACCA-level
+    {
+      name: "IFRS Foundation",
+      url: "https://www.ifrs.org/news-and-events/updates/rss/",
+    },
+    {
+      name: "Journal of Accountancy",
+      url: "https://www.journalofaccountancy.com/rss/all-content.html",
+    },
+    { name: "Accounting Today", url: "https://www.accountingtoday.com/feed" },
+    { name: "AICPA News", url: "https://www.aicpa-cima.com/news/rss" },
+
+    // Corporate finance & valuation
+    {
+      name: "Corporate Finance Institute",
+      url: "https://corporatefinanceinstitute.com/resources/feed/",
+    },
+    {
+      name: "Mergers & Inquisitions",
+      url: "https://mergersandinquisitions.com/feed/",
+    },
+
+    // Economics & macro
+    { name: "IMF Blog", url: "https://www.imf.org/en/Blogs/rss" },
+    { name: "World Bank Blogs", url: "https://blogs.worldbank.org/feed" },
+
+    // Personal finance
+    {
+      name: "Mr. Money Mustache",
+      url: "https://www.mrmoneymustache.com/feed/",
+    },
+    {
+      name: "Money Saving Expert",
+      url: "https://www.moneysavingexpert.com/feed/",
     },
   ],
 
