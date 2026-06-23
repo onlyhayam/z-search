@@ -1,13 +1,7 @@
 /* control.js — manage categories & feeds */
 
 function escapeHTML(str) {
-  return (str || "").replace(
-    /[&<>"']/g,
-    (c) =>
-      ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" })[
-        c
-      ],
-  );
+  return (str || "").replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
 }
 
 function showToast(msg) {
@@ -21,10 +15,8 @@ function showToast(msg) {
 function populateCategorySelect() {
   const select = document.getElementById("feedCategorySelect");
   const categories = getCategoryNames();
-  select.innerHTML =
-    categories
-      .map((c) => `<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`)
-      .join("") + `<option value="__new__">+ New category…</option>`;
+  select.innerHTML = categories.map(c => `<option value="${escapeHTML(c)}">${escapeHTML(c)}</option>`).join("")
+    + `<option value="__new__">+ New category…</option>`;
 }
 
 function renderCategories() {
@@ -37,25 +29,20 @@ function renderCategories() {
     return;
   }
 
-  list.innerHTML = categories
-    .map((cat) => {
-      const feeds = config[cat];
-      const rows = feeds.length
-        ? feeds
-            .map(
-              (f) => `
+  list.innerHTML = categories.map(cat => {
+    const feeds = config[cat];
+    const rows = feeds.length
+      ? feeds.map(f => `
         <div class="feed-row">
           <div class="feed-info">
-            <div class="feed-name">${escapeHTML(f.name)} ${f.preset ? '<span class="badge">preset</span>' : ""}</div>
+            <div class="feed-name">${escapeHTML(f.name)} ${f.preset ? '<span class="badge">preset</span>' : ''}</div>
             <div class="feed-url">${escapeHTML(f.url)}</div>
           </div>
           <button class="btn-danger" data-action="delete-feed" data-cat="${escapeHTML(cat)}" data-url="${escapeHTML(f.url)}" data-preset="${f.preset}">Delete</button>
-        </div>`,
-            )
-            .join("")
-        : `<div class="empty-state" style="padding:16px 0;">No feeds in this category.</div>`;
+        </div>`).join("")
+      : `<div class="empty-state" style="padding:16px 0;">No feeds in this category.</div>`;
 
-      return `
+    return `
       <div class="panel">
         <div class="category-header">
           <h3>${escapeHTML(cat)} <span class="count">(${feeds.length})</span></h3>
@@ -63,10 +50,9 @@ function renderCategories() {
         </div>
         ${rows}
       </div>`;
-    })
-    .join("");
+  }).join("");
 
-  list.querySelectorAll("[data-action='delete-feed']").forEach((btn) => {
+  list.querySelectorAll("[data-action='delete-feed']").forEach(btn => {
     btn.addEventListener("click", () => {
       const { cat, url, preset } = btn.dataset;
       deleteFeed(cat, url, preset === "true");
@@ -75,7 +61,7 @@ function renderCategories() {
     });
   });
 
-  list.querySelectorAll("[data-action='delete-category']").forEach((btn) => {
+  list.querySelectorAll("[data-action='delete-category']").forEach(btn => {
     btn.addEventListener("click", () => {
       const cat = btn.dataset.cat;
       if (!confirm(`Delete category "${cat}" and all its feeds?`)) return;
@@ -101,20 +87,18 @@ document.getElementById("addCategoryBtn").addEventListener("click", () => {
   refreshAll();
 });
 
-document
-  .getElementById("feedCategorySelect")
-  .addEventListener("change", (e) => {
-    if (e.target.value === "__new__") {
-      const name = prompt("New category name:");
-      if (name && name.trim()) {
-        addCategory(name.trim());
-        refreshAll();
-        document.getElementById("feedCategorySelect").value = name.trim();
-      } else {
-        e.target.value = getCategoryNames()[0] || "";
-      }
+document.getElementById("feedCategorySelect").addEventListener("change", (e) => {
+  if (e.target.value === "__new__") {
+    const name = prompt("New category name:");
+    if (name && name.trim()) {
+      addCategory(name.trim());
+      refreshAll();
+      document.getElementById("feedCategorySelect").value = name.trim();
+    } else {
+      e.target.value = getCategoryNames()[0] || "";
     }
-  });
+  }
+});
 
 document.getElementById("addFeedBtn").addEventListener("click", () => {
   const category = document.getElementById("feedCategorySelect").value;
@@ -123,8 +107,7 @@ document.getElementById("addFeedBtn").addEventListener("click", () => {
 
   if (!category || category === "__new__") return showToast("Pick a category");
   if (!name) return showToast("Enter a feed name");
-  if (!url || !/^https?:\/\//i.test(url))
-    return showToast("Enter a valid feed URL");
+  if (!url || !/^https?:\/\//i.test(url)) return showToast("Enter a valid feed URL");
 
   addFeed(category, name, url);
   document.getElementById("newFeedName").value = "";
@@ -134,12 +117,7 @@ document.getElementById("addFeedBtn").addEventListener("click", () => {
 });
 
 document.getElementById("resetBtn").addEventListener("click", () => {
-  if (
-    !confirm(
-      "This clears all custom feeds/categories and restores preset defaults. Continue?",
-    )
-  )
-    return;
+  if (!confirm("This clears all custom feeds/categories and restores preset defaults. Continue?")) return;
   resetAll();
   showToast("Restored defaults");
   refreshAll();
