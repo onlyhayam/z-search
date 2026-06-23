@@ -116,13 +116,27 @@
       <section class="engine-list" aria-label="Search with a specific engine">
         <!-- Populated dynamically from ENGINES in engines.js -->
       </section>
-    </main>
 
-    <footer class="footer">
-      Feel no more owned by a single search engine. Surf gotcha covered !
-    </footer>
+      <div class="ad-box" id="adBox">
+        <div class="slideshow" id="slideshow">
+          <div class="slides" id="slides"></div>
+          <button class="nav-btn nav-prev" onclick="prevSlide()">
+            &#10094;
+          </button>
+          <button class="nav-btn nav-next" onclick="nextSlide()">
+            &#10095;
+          </button>
+          <div class="dots" id="dots"></div>
+        </div>
+        <div class="ad-buttons">
+          <a class="btn1" id="btn1" href="#" target="_blank"></a>
+          <a class="btn2" id="btn2" href="#" target="_blank"></a>
+        </div>
+      </div>
+    </main>
 
     <script src="engines.js"></script>
     <script src="script.js"></script>
+    <script src="affiliation.js"></script>
   </body>
 </html>

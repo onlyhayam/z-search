@@ -54,12 +54,6 @@ const ENGINES = [
     icon: "https://www.google.com/s2/favicons?sz=64&domain=qwant.com",
   },
   {
-    id: "privau",
-    name: "PrivAu",
-    url: "https://www.priv.au/%s",
-    icon: "https://www.google.com/s2/favicons?sz=64&domain=priv.au",
-  },
-  {
     id: "startpage",
     name: "Startpage",
     url: "https://www.startpage.com/sp/search?query=%s",
