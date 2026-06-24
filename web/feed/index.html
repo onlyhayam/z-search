@@ -3,34 +3,58 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Feed Viewer</title>
+    <meta name="color-scheme" content="dark" />
+    <title>Feed</title>
+    <link rel="icon" type="image/svg+xml" href="z.svg" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="/main.css" />
   </head>
   <body>
     <header class="topbar">
-      <div style="display: flex; gap: 8px; align-items: center">
-        <button class="nav-link refresh-btn" id="refreshBtn" type="button">
-          <svg
-            width="13"
-            height="13"
-            viewBox="0 0 16 16"
-            fill="none"
-            stroke="currentColor"
-            stroke-width="1.5"
-          >
-            <path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2v4h-4" />
-          </svg>
-          Refresh
-        </button>
+      <div class="brand">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="30"
+          height="30"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="1"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="lucide lucide-layout-list-icon lucide-layout-list"
+        >
+          <rect width="7" height="7" x="3" y="3" rx="1" />
+          <rect width="7" height="7" x="3" y="14" rx="1" />
+          <path d="M14 4h7" />
+          <path d="M14 9h7" />
+          <path d="M14 15h7" />
+          <path d="M14 20h7" />
+        </svg>
+        <span class="brand__name">Feed</span>
       </div>
+
+      <button
+        id="menuToggle"
+        class="icon-btn"
+        aria-label="Open menu"
+        aria-expanded="false"
+      >
+       <button class="feed">
+        <a href="control.html">Manage Feed preference</a>
+      </button>
     </header>
 
-    <div class="container">
-      <div class="tabs" id="tabs"></div>
-      <div id="content"><div class="loading-state">Loading feeds…</div></div>
-    </div>
+  
+ 
+    <main class="main">
+     
 
-    <script src="feeds.js"></script>
+      <iframe src="/feed/feed.html"></iframe>
+    </main>
+
     <script src="script.js"></script>
+    <script src="affiliation.js"></script>
+    <script src="feeds.js"></script>
   </body>
 </html>

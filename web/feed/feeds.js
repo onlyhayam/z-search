@@ -116,12 +116,6 @@ const PRESET_FEEDS = {
       name: "Associated Press",
       url: "https://feeds.apnews.com/rss/apf-topnews",
     },
-    { name: "BBC World", url: "http://feeds.bbci.co.uk/news/world/rss.xml" },
-    { name: "NPR News", url: "https://feeds.npr.org/1001/rss.xml" },
-    {
-      name: "The Economist",
-      url: "https://www.economist.com/the-world-this-week/rss.xml",
-    },
   ],
 };
 

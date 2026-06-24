@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Feed Viewer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div style="display: flex; gap: 8px; align-items: center">
+        <button class="nav-link refresh-btn" id="refreshBtn" type="button">
+          <svg
+            width="13"
+            height="13"
+            viewBox="0 0 16 16"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="1.5"
+          >
+            <path d="M13.5 8a5.5 5.5 0 1 1-1.6-3.9M13.5 2v4h-4" />
+          </svg>
+          Refresh
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="tabs" id="tabs"></div>
+      <div id="content"><div class="loading-state">Loading feeds…</div></div>
+    </div>
+
+    <script src="feeds.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>

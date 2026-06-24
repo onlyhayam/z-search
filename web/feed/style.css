@@ -395,3 +395,11 @@ button.btn-ghost:hover {
   opacity: 1;
   transform: translateY(0);
 }
+
+.feed {
+  align-self: flex-end;
+}
+
+svg {
+  width: 40;
+}
