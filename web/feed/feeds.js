@@ -31,15 +31,11 @@ const PRESET_FEEDS = {
   ],
 
   Cooking: [
-    { name: "Serious Eats", url: "https://www.seriouseats.com/rss" },
-    { name: "Food52", url: "https://food52.com/blog/feed" },
     { name: "Smitten Kitchen", url: "https://smittenkitchen.com/feed/" },
-    { name: "Simply Recipes", url: "https://www.simplyrecipes.com/feed" },
     {
       name: "King Arthur Baking",
       url: "https://www.kingarthurbaking.com/blog/feed",
     },
-    { name: "The Kitchn", url: "https://www.thekitchn.com/rss" },
   ],
 };
 

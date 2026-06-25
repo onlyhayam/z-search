@@ -62,25 +62,11 @@
        position:fixed so it never affects the page layout. -->
     <nav id="sideMenu" class="side-menu">
       <div class="side-menu__section">
-        <h1>Surf</h1>
-        <ul>
-          <li>
-            <a href="/index.html">Surf</a>
-          </li>
-          <li>
-            <a href="#.html">Surf Control</a>
-          </li>
-        </ul>
-
-        <h1>Feed</h1>
-        <ul>
-          <li>
-            <a href="feed/index.html">Feed</a>
-          </li>
-          <li>
-            <a href="feed/control.html">Feed Control</a>
-          </li>
-        </ul>
+        <h2>Surf</h2>
+        <a href="/index.html">Surf</a>
+        <h2>Feed</h2>
+        <a href="feed/index.html">Feed</a>
+        <a href="feed/control.html">Feed Preferences</a>
       </div>
     </nav>
 
@@ -217,8 +203,24 @@
       <iframe src="/feed/feed.html"></iframe>
     </main>
     <footer>
-      Surf&trade;. &copy; The Surf Community and Contributors. All Rights
-      Reserved.
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        stroke-width="1"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        class="lucide lucide-globe-check-icon lucide-globe-check"
+      >
+        <path d="m15 6 2 2 4-4" />
+        <path
+          d="M2 12h20A10 10 0 1 1 12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 4-10"
+        />
+      </svg>
+      &nbsp;Surf&trade;. &copy; 2026 The Surf Software.
     </footer>
     <script>
       if ("serviceWorker" in navigator) {
