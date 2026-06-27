@@ -40,7 +40,30 @@ body {
   flex-direction: column;
 }
 
-/* ---------------- Top bar ---------------- */
+.utility-bar {
+  background: #1a1a1a;
+  color: #d2d2d2;
+  font-size: 12px;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1.5rem;
+  height: 32px;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.utility-bar a {
+  color: #d2d2d2;
+  text-decoration: none;
+  letter-spacing: 0.02em;
+  transition: color 0.15s;
+}
+
+.utility-bar a:hover {
+  color: #fff;
+}
+
 .topbar {
   top: 0;
   z-index: 100;
@@ -488,7 +511,7 @@ a:active {
 iframe {
   width: 100%;
   border: none;
-  height: 1000px;
+  height: 2000px;
   scrollbar-width: none;
 }
 
