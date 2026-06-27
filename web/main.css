@@ -146,7 +146,7 @@ body {
 }
 
 .side-menu__section a {
-  display: block;
+  /* display: block; */
   padding-left: 10px;
   margin: 10px;
 }
